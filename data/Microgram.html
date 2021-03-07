@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microgram</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="ref-content">
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand m-auto">Microgram</a>
+            <form class="form-inline m-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="m-auto my-2 div-btn-login">
+                <button class="btn btn-outline-success btn-login" type="button">Login</button>
+            </div>
+        </nav>
+
+        <div class="splash-login w-100 h-100" style="display: none">
+            <form class="login-form">
+                <input class="form-control mr-lg-2 mb-2" name="login" type="text" placeholder="Login" aria-label="Login">
+                <input class="form-control mr-lg-2 mb-2" name="password" type="password"
+                       placeholder="Password" aria-label="Password">
+                <button class="btn btn-block btn-outline-success my-2 m-auto submit-login">login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container d-flex column m-auto">
+        <div class="posts-container d-flex flex-column" style="width: 750px">
+            <div class="post mt-3">
+                <div class="post-image position-relative d-flex align-items-center justify-content-center">
+                    <img src="images/mandalorec.jpg" class="img-fluid d-block" alt="Responsive image">
+                </div>
+                <div class="icons d-flex flex-row">
+                    <div class="ml-2 like">
+                        <span class="h1 mx-2 muted">
+                            <i class="far fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="ml-2">
+                        <span class="h1 mx-2">
+                            <i class="far fa-comment"></i>
+                        </span>
+                    </div>
+                    <div class="ml-auto mr-3 bookmark">
+                        <span class="h1 mx-2 muted">
+                            <i class="far fa-bookmark"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="border-bottom border-left border-right d-flex -flex-row">
+                    <div class="ml-2">
+                        <h3 class="text-muted mb-1">Description</h3>
+                        <p>Blah Blah Blah</p>
+                    </div>
+                    <div class="ml-auto mr-2">
+                        <h3 class="text-muted mb-1">Date:</h3>
+                        <p>2017-17-18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-content mt-3 ml-5 w-auto">
+            <form method="post" class="add-post-form" enctype="multipart/form-data">
+                <input type="hidden" name="userId" value="1">
+                <div>
+                    <h3>Download Image:</h3>
+                    <button type="button" class="btn btn-outline-primary">
+                        <input type="file" name="image" multiple accept="image/*">
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <h5>Write a description</h5>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-success">
+                        <input type="text" placeholder="Description" name="description">
+                    </button>
+                </div>
+                <div class="mt-3 add-post-btn">
+                    <button type="button" class="btn btn-lg btn-block btn-secondary">Add Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<script src="Microgram.js"></script>
+</body>
+</html>

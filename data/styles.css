@@ -1,0 +1,7 @@
+.splash-login {
+    position: fixed;
+    background-image: url("images/mandalorec-poster.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 200;
+}
